@@ -1,0 +1,457 @@
+  /* ====== Estilo Global ====== */
+  body {
+    background-color: #0a0a23;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ====== Área de Filtros e Pesquisa ====== */
+  .container h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+  }
+
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 20px 20px;
+    flex-wrap: wrap;
+  }
+
+  .search-bar,
+  .element-filter {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .search-bar {
+    width: 260px;
+  }
+
+  .element-filter {
+    background-color: #1f1f3b;
+    color: #fff;
+  }
+
+  /* ====== Lista de Personagens ====== */
+  .character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  /* ====== Cartão do Personagem ====== */
+  .character-card {
+    background-color: #0d1b2a;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.3s;
+    color: #ffffff;
+    border: 3px solid transparent;
+    max-width: 220px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .character-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .character-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /* ====== Textos com contorno ====== */
+  .character-card h2,
+  .character-card p {
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px  1px 0 #000,
+      1px  1px 0 #000;
+    color: #fff; /* Garantir que o texto tenha a cor branca ou outro tom claro */
+  }
+
+  /* ====== Botão 'Ver mais' ====== */
+  .see-more-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+  }
+
+  .see-more-button:hover {
+    background-color: #0f6cd3;
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+  }
+
+  .see-more-button:focus {
+    outline: none; /* Remove o contorno ao clicar */
+  }
+
+
+  /* ====== Estilização por Elemento ====== */
+  /* ====== Cartão Pyro ====== */
+  .character-card.pyro {
+    background: linear-gradient(180deg, #ff4500, #ff8000, #ffb300); /* Tons de laranja e vermelho */
+    animation: fireGlow 6s ease-in-out infinite alternate; /* Animação suave */
+  }
+
+  .character-card.pyro::before {
+    content: '';
+    position: absolute;
+    top: -3px; left: -3px; right: -3px; bottom: -3px;
+    background: conic-gradient(from 0deg, #ff0000, #ff6a00, #ffcc00, #ff6a00, #ff0000); /* Efeito de prismas de fogo */
+    animation: prismFire 15s linear infinite; /* Aumento do tempo para giro mais lento */
+    border-radius: 12px;
+    filter: blur(6px); /* Desfoque mais suave */
+    z-index: -1;
+  }
+
+  @keyframes fireGlow {
+    0% { box-shadow: 0 0 25px rgba(255, 69, 0, 0.5); }
+    100% { box-shadow: 0 0 60px rgba(255, 140, 0, 0.9); }
+  }
+
+  @keyframes prismFire {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1440deg); } /* Giro mais lento e mais longo */
+  }
+
+
+
+  /* ====== Cartão Cryo ====== */
+  .character-card.cryo {
+    background: linear-gradient(180deg, #aeefff, #5edfff, #00bbff); /* Tons de azul e branco */
+    color: #002b36;
+    animation: cryoGlow 6s ease-in-out infinite alternate; /* Animação suave */
+  }
+
+  .character-card.cryo::before {
+    content: '';
+    position: absolute;
+    top: -3px; left: -3px; right: -3px; bottom: -3px;
+    background: conic-gradient(from 0deg, #00bbff, #5edfff, #aeefff, #5edfff, #00bbff); /* Efeito de prismas de gelo */
+    animation: prismCryo 15s linear infinite; /* Aumento do tempo para giro mais lento */
+    border-radius: 12px;
+    filter: blur(6px); /* Desfoque mais suave */
+    z-index: -1;
+  }
+
+  @keyframes cryoGlow {
+    0% { box-shadow: 0 0 25px rgba(0, 191, 255, 0.5); }
+    100% { box-shadow: 0 0 60px rgba(0, 191, 255, 0.9); }
+  }
+
+  @keyframes prismCryo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1440deg); } /* Giro mais lento e mais longo */
+  }
+
+
+  /* ====== Cartão Electro ====== */
+  .character-card.electro {
+    background: linear-gradient(180deg, #6f42c1, #8a2be2, #da70d6); /* Tons roxos e lilás */
+    color: #ffffff;
+    animation: electroGlow 6s ease-in-out infinite alternate; /* Animação mais suave */
+  }
+
+  .character-card.electro::before {
+    content: '';
+    position: absolute;
+    top: -3px; left: -3px; right: -3px; bottom: -3px;
+    background: conic-gradient(from 0deg, #8a2be2, #da70d6, #6f42c1, #da70d6, #8a2be2); /* Efeito de prismas de eletricidade */
+    animation: prismElectro 20s linear infinite; /* Giro mais lento */
+    border-radius: 12px;
+    filter: blur(6px); /* Desfoque mais suave */
+    z-index: -1;
+  }
+
+  @keyframes electroGlow {
+    0% { box-shadow: 0 0 25px rgba(138, 43, 226, 0.5); }
+    100% { box-shadow: 0 0 60px rgba(186, 85, 211, 0.9); }
+  }
+
+  @keyframes prismElectro {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1440deg); } /* Giro mais lento e mais escondido */
+  }
+
+
+  /* ====== Cartão Anemo ====== */
+  .character-card.anemo {
+    background: linear-gradient(180deg, #98fb98, #40e0d0, #00fa9a); /* Tons verde e azul */
+    color: #0a0a0a;
+    animation: anemoGlow 6s ease-in-out infinite alternate; /* Animação mais suave */
+  }
+
+  .character-card.anemo::before {
+    content: '';
+    position: absolute;
+    top: -3px; left: -3px; right: -3px; bottom: -3px;
+    background: conic-gradient(from 0deg, #00fa9a, #40e0d0, #98fb98, #40e0d0, #00fa9a); /* Efeito de prismas de vento */
+    animation: prismAnemo 20s linear infinite; /* Giro mais lento */
+    border-radius: 12px;
+    filter: blur(6px); /* Desfoque mais suave */
+    z-index: -1;
+  }
+
+  @keyframes anemoGlow {
+    0% { box-shadow: 0 0 25px rgba(72, 209, 204, 0.5); }
+    100% { box-shadow: 0 0 60px rgba(0, 255, 255, 0.9); }
+  }
+
+  @keyframes prismAnemo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1440deg); } /* Giro mais lento e mais escondido */
+  }
+
+  /* ====== Cartão Hydro ====== */
+  .character-card.hydro {
+    background: linear-gradient(180deg, #89cff0, #4682b4, #1e90ff); /* Tons de azul */
+    animation: hydroGlow 6s ease-in-out infinite alternate; /* Animação suave */
+  }
+
+  .character-card.hydro::before {
+    content: '';
+    position: absolute;
+    top: -3px; left: -3px; right: -3px; bottom: -3px;
+    background: conic-gradient(from 0deg, #1e90ff, #4682b4, #89cff0, #4682b4, #1e90ff); /* Efeito de prismas de água */
+    animation: prismHydro 15s linear infinite; /* Aumento do tempo para giro mais lento */
+    border-radius: 12px;
+    filter: blur(6px); /* Desfoque mais suave */
+    z-index: -1;
+  }
+
+  @keyframes hydroGlow {
+    0% { box-shadow: 0 0 25px rgba(30, 144, 255, 0.5); }
+    100% { box-shadow: 0 0 60px rgba(70, 130, 180, 0.9); }
+  }
+
+  @keyframes prismHydro {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1440deg); } /* Giro mais lento e mais longo */
+  }
+
+
+  /* ====== Cartão Dendro ====== */
+  .character-card.dendro {
+    background: linear-gradient(180deg, #a8e6cf, #56ab2f, #a8c66c); /* Tons verdes */
+    color: #0a0a0a;
+    animation: dendroGlow 6s ease-in-out infinite alternate; /* Animação suave */
+  }
+
+  .character-card.dendro::before {
+    content: '';
+    position: absolute;
+    top: -3px; left: -3px; right: -3px; bottom: -3px;
+    background: conic-gradient(from 0deg, #56ab2f, #a8e6cf, #a8c66c, #56ab2f, #a8e6cf); /* Efeito de prismas verdes */
+    animation: prismDendro 20s linear infinite; /* Giro mais lento */
+    border-radius: 12px;
+    filter: blur(6px); /* Desfoque mais suave */
+    z-index: -1;
+  }
+
+  @keyframes dendroGlow {
+    0% { box-shadow: 0 0 25px rgba(50, 205, 50, 0.5); }
+    100% { box-shadow: 0 0 60px rgba(34, 139, 34, 0.9); }
+  }
+
+  @keyframes prismDendro {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1440deg); } /* Giro mais lento e mais escondido */
+  }
+
+
+  /* ====== Cartão Geo ====== */
+  .character-card.geo {
+    background: linear-gradient(180deg, #f5d76e, #e6c200, #b8860b); /* Tons de amarelo e dourado */
+    animation: geoGlow 6s ease-in-out infinite alternate; /* Animação suave */
+  }
+
+  .character-card.geo::before {
+    content: '';
+    position: absolute;
+    top: -3px; left: -3px; right: -3px; bottom: -3px;
+    background: conic-gradient(from 0deg, #fff8dc, #ffd700, #daa520, #ffd700, #fff8dc); /* Efeito de prismas dourados */
+    animation: prismGeo 15s linear infinite; /* Aumento do tempo para giro mais lento */
+    border-radius: 12px;
+    filter: blur(6px); /* Desfoque mais suave */
+    z-index: -1;
+  }
+
+  @keyframes geoGlow {
+    0% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.5); }
+    100% { box-shadow: 0 0 60px rgba(218, 165, 32, 0.9); }
+  }
+
+  @keyframes prismGeo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1440deg); } /* Giro mais lento e mais longo */
+  }
+
+
+
+  /* ====== Texto Nome, Arma e Elemento dos Personagens ====== */
+  .character-card h2,
+  .character-card p {
+    color: #fff; /* Garanta que os textos principais sejam brancos */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .character-card h3 {
+    color: #ffd700; /* Alterando cor do texto para garantir visibilidade no fundo */
+  }
+
+  .character-card p {
+    color: #d3d3d3; /* Especificações em um tom mais claro */
+  }
+  /* ====== (Todo o seu CSS anterior aqui permanece inalterado) ====== */
+
+  /* ====== Texto Nome, Arma e Elemento dos Personagens ====== */
+  .character-card h2,
+  .character-card p {
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .character-card h3 {
+    color: #ffd700;
+  }
+
+  .character-card p {
+    color: #d3d3d3;
+  }
+
+  /* ====== Modal de Detalhes ====== */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    max-width: 700px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .modal-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .modal-right {
+    flex: 2;
+    padding-left: 20px;
+  }
+
+  .modal-info h2 {
+    margin-top: 0;
+  }
+
+  .modal-description {
+    margin-top: 15px;
+  }
+
+  .back-button {
+    margin-top: 20px;
+    background-color: #888;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .back-button:hover {
+    background-color: #555;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+/* ====== Estilização do Modal por Elemento ====== */
+.modal-content.pyro {
+  background: linear-gradient(135deg, #ff4500, #ff8000, #ffb300);
+  color: #fff;
+}
+
+.modal-content.cryo {
+  background: linear-gradient(135deg, #aeefff, #5edfff, #00bbff);
+  color: #002b36;
+}
+
+.modal-content.electro {
+  background: linear-gradient(135deg, #6f42c1, #8a2be2, #da70d6);
+  color: #fff;
+}
+
+.modal-content.anemo {
+  background: linear-gradient(135deg, #98fb98, #40e0d0, #00fa9a);
+  color: #0a0a0a;
+}
+
+.modal-content.hydro {
+  background: linear-gradient(135deg, #89cff0, #4682b4, #1e90ff);
+  color: #fff;
+}
+
+.modal-content.dendro {
+  background: linear-gradient(135deg, #a8e6cf, #56ab2f, #a8c66c);
+  color: #0a0a0a;
+}
+
+.modal-content.geo {
+  background: linear-gradient(135deg, #f5d76e, #e6c200, #b8860b);
+  color: #0a0a0a;
+}

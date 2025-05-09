@@ -1,0 +1,554 @@
+[
+  {
+    "name": "Arlecchino",
+    "element": "Pyro",
+    "weapon": "Lança",
+    "image": "public/images/arlecchino.png",
+    "description": "Arlecchino é uma das personagens de Pyro com habilidades que envolvem ataques rápidos e explosivos."
+  },
+  {
+    "name": "Diluc",
+    "element": "Pyro",
+    "weapon": "Espada",
+    "image": "public/images/diluc.png",
+    "description": "Diluc é um mestre da espada com poder Pyro, conhecido por sua força impressionante."
+  },
+  {
+    "name": "Hutao",
+    "element": "Pyro",
+    "weapon": "Lança",
+    "image": "public/images/hutao.png",
+    "description": "Hutao é uma personagem que combina habilidade com humor, utilizando Pyro e lanças para ataques poderosos."
+  },
+  {
+    "name": "Klee",
+    "element": "Pyro",
+    "weapon": "Catalisadora",
+    "image": "public/images/klee.png",
+    "description": "Klee é uma menina travessa com uma habilidade incontrolável de criar explosões."
+  },
+  {
+    "name": "Xiangling",
+    "element": "Pyro",
+    "weapon": "Lança",
+    "image": "public/images/xiangling.png",
+    "description": "Xiangling é uma chef criativa e poderosa, usando sua lança e Pyro para criar deliciosos pratos e ataques."
+  },
+  {
+    "name": "Wriothesley",
+    "element": "Cryo",
+    "weapon": "Catalisadora",
+    "image": "public/images/wriothesley.png",
+    "description": "Wriothesley é um mestre em gelo, dominando o Cryo com a ajuda de sua Catalisadora."
+  },
+  {
+    "name": "Ganyu",
+    "element": "Cryo",
+    "weapon": "Arco",
+    "image": "public/images/ganyu.png",
+    "description": "Ganyu é uma arqueira com uma ligação profunda com o gelo, conhecida por sua elegância e precisão."
+  },
+  {
+    "name": "Charlotte",
+    "element": "Cryo",
+    "weapon": "Catalisadora",
+    "image": "public/images/charlotte.png",
+    "description": "Charlotte é uma personagem com uma combinação única de habilidades Cryo e Catalisadora."
+  },
+  {
+    "name": "Chongyun",
+    "element": "Cryo",
+    "weapon": "Espadão",
+    "image": "public/images/chongyun.png",
+    "description": "Chongyun é um exorcista destemido com habilidades Cryo que exorcizam espíritos enquanto luta com seu espadão."
+  },
+  {
+    "name": "Rosaria",
+    "element": "Cryo",
+    "weapon": "Lança",
+    "image": "public/images/rosaria.png",
+    "description": "Rosaria é uma freira austera que utiliza Cryo e uma lança para afastar os inimigos com uma habilidade glacial."
+  },
+  {
+    "name": "Yae Miko",
+    "element": "Electro",
+    "weapon": "Catalisadora",
+    "image": "public/images/yaemiko.png",
+    "description": "Yae Miko é uma sacerdotisa de Electro com poderes que permitem dominar e manipular relâmpagos."
+  },
+  {
+    "name": "Fischl",
+    "element": "Electro",
+    "weapon": "Arco",
+    "image": "public/images/fischl.png",
+    "description": "Fischl é uma arqueira com uma ligação profunda ao Electro e a misteriosa corvo Oz."
+  },
+  {
+    "name": "Lisa",
+    "element": "Electro",
+    "weapon": "Catalisadora",
+    "image": "public/images/lisa.png",
+    "description": "Lisa é uma bibliotecária talentosa que usa seu poder Electro para lutar contra inimigos e defender o conhecimento."
+  },
+  {
+    "name": "Raiden Shogun",
+    "element": "Electro",
+    "weapon": "Lança",
+    "image": "public/images/raidenshogun.png",
+    "description": "Raiden Shogun é uma líder imponente que usa a lâmina e o poder Electro com uma habilidade inigualável."
+  },
+  {
+    "name": "Clorinde",
+    "element": "Electro",
+    "weapon": "Espada",
+    "image": "public/images/clorinde.png",
+    "description": "Clorinde é uma espadachim que domina o poder Electro com sua espada afiada e habilidade estratégica."
+  },
+  {
+    "name": "Venti",
+    "element": "Anemo",
+    "weapon": "Arco",
+    "image": "public/gif/venti.gif",
+    "description": "ARCONTE SUPERIOR."
+  },
+  {
+    "name": "Lynette",
+    "element": "Anemo",
+    "weapon": "Espada",
+    "image": "public/images/lynette.png",
+    "description": "Lynette é uma guerreira ágil que domina o vento com sua espada afiada."
+  },
+  {
+    "name": "Faruzan",
+    "element": "Anemo",
+    "weapon": "Arco",
+    "image": "public/images/faruzan.png",
+    "description": "Faruzan é uma arqueira com uma ligação profunda ao vento, utilizando habilidades de Anemo para proteção."
+  },
+  {
+    "name": "Jean",
+    "element": "Anemo",
+    "weapon": "Espada",
+    "image": "public/images/jean.png",
+    "description": "Jean é uma líder que luta com uma espada e com o poder do vento, guiando seu povo com sabedoria."
+  },
+  {
+    "name": "Wanderer",
+    "element": "Anemo",
+    "weapon": "Catalisadora",
+    "image": "public/images/wanderer.png",
+    "description": "Wanderer é uma figura misteriosa que utiliza Anemo e Catalisadora para buscar novos horizontes."
+  },
+  {
+    "name": "Barbara",
+    "element": "Hydro",
+    "weapon": "Catalisadora",
+    "image": "public/images/barbara.png",
+    "description": "Barbara é uma cantora e curandeira com habilidades Hydro que curam os aliados e afetam os inimigos."
+  },
+  {
+    "name": "Mualani",
+    "element": "Hydro",
+    "weapon": "Espada",
+    "image": "public/images/mualani.png",
+    "description": "Mualani é uma combatente poderosa, com habilidades Hydro que controlam a água em combate."
+  },
+  {
+    "name": "Furina",
+    "element": "Hydro",
+    "weapon": "Espada",
+    "image": "public/images/furina.png",
+    "description": "Furina usa a espada com maestria, manipulando o elemento Hydro para causar dano aos inimigos."
+  },
+  {
+    "name": "Xingqiu",
+    "element": "Hydro",
+    "weapon": "Espada",
+    "image": "public/images/xingqiu.png",
+    "description": "Xingqiu é um espada-manipulador de Hydro, conhecido por sua inteligência e habilidades de combate."
+  },
+  {
+    "name": "Neuvillette",
+    "element": "Hydro",
+    "weapon": "Catalisadora",
+    "image": "public/images/neuvillette.png",
+    "description": "Mais forte,mais rápido,superior em todos os aspectos. é o dragão d'água porra-Kiramon"
+  },
+  {
+    "name": "Kinich",
+    "element": "Dendro",
+    "weapon": "Catalisadora",
+    "image": "public/images/kinich.png",
+    "description": "Kinich é uma personagem que usa Dendro e Catalisadora para manipular plantas e a natureza."
+  },
+  {
+    "name": "Kirara",
+    "element": "Dendro",
+    "weapon": "Espada",
+    "image": "public/images/kirara.png",
+    "description": "Kirara é uma combatente com uma ligação natural ao Dendro, com habilidades únicas em combate."
+  },
+  {
+    "name": "Collei",
+    "element": "Dendro",
+    "weapon": "Arco",
+    "image": "public/images/collei.png",
+    "description": "Collei é uma arqueira de Dendro, lutando com sua habilidade de controle da natureza."
+  },
+  {
+    "name": "Yaoyao",
+    "element": "Dendro",
+    "weapon": "Lança",
+    "image": "public/images/yaoyao.png",
+    "description": "Yaoyao é uma jovem com um coração puro, usando Dendro e lança para proteger a natureza."
+  },
+  {
+    "name": "Tighnari",
+    "element": "Dendro",
+    "weapon": "Arco",
+    "image": "public/images/tighnari.png",
+    "description": "Tighnari é um arqueiro de Dendro com habilidades excepcionais para detectar perigos na floresta."
+  },
+  {
+    "name": "Ningguang",
+    "element": "Geo",
+    "weapon": "Catalisadora",
+    "image": "public/images/ningguang.png",
+    "description": "Ningguang é uma sábia manipuladora do Geo, usando sua Catalisadora para atacar e defender."
+  },
+  {
+    "name": "Gorou",
+    "element": "Geo",
+    "weapon": "Arco",
+    "image": "public/images/gorou.png",
+    "description": "Gorou é um general com uma ligação sólida ao Geo, lutando com seu arco para proteger seus aliados."
+  },
+  {
+    "name": "Albedo",
+    "element": "Geo",
+    "weapon": "Espada",
+    "image": "public/images/albedo.png",
+    "description": "Albedo é um alquimista com grandes habilidades no uso do Geo e espada para controlar e criar."
+  },
+  {
+    "name": "Zhongli",
+    "element": "Geo",
+    "weapon": "Lança",
+    "image": "public/images/zhongli.png",
+    "description": "Zhongli é um geólogo sábio, com poder sobre o Geo e uma lança que provoca grandes destruições."
+  },
+  {
+    "name": "Yelan",
+    "element": "Hydro",
+    "weapon": "Arco",
+    "image": "public/images/yelan.png",
+    "description": "Yelan é uma investigadora habilidosa com um controle impressionante sobre o Hydro e seu arco."
+  },
+    {
+      "name": "Arataki Itto",
+      "element": "Geo",
+      "weapon": "Espadão",
+      "image": "public/images/arataki_itto.png",
+      "description": "Arataki Itto é um oni carismático e líder da gangue Arataki, conhecido por sua força e espírito competitivo."
+    },
+    {
+      "name": "Noelle",
+      "element": "Geo",
+      "weapon": "Espadão",
+      "image": "public/images/noelle.png",
+      "description": "Noelle é uma cavaleira dedicada dos Cavaleiros de Favonius, conhecida por sua força e desejo de proteger os outros."
+    },
+    {
+      "name": "Yun Jin",
+      "element": "Geo",
+      "weapon": "Lança",
+      "image": "public/images/yun_jin.png",
+      "description": "Yun Jin é uma artista de ópera de Liyue, que incorpora sua paixão pela música em suas habilidades de combate."
+    },
+    
+      {
+        "name": "Kachina",
+        "element": "Geo",
+        "weapon": "Lança",
+        "image": "public/images/kachina.png",
+        "description": "Kachina é uma guerreira determinada de Natlan, conhecida por sua habilidade com a lança e seu espírito protetor."
+      },
+      {
+        "name": "Xilonen",
+        "element": "Geo",
+        "weapon": "Espada",
+        "image": "public/images/xilonen.png",
+        "description": "Xilonen é uma ferreira de Natlan, famosa por sua destreza na forja e por empunhar sua espada com orgulho."
+      },
+      {
+        "name": "Chiori",
+        "element": "Geo",
+        "weapon": "Espada",
+        "image": "public/images/chiori.png",
+        "description": "Chiori é uma estilista refinada e precisa, que usa seu talento artístico e sua espada para moldar o mundo ao seu redor."
+      },
+      {
+        "name": "Navia",
+        "element": "Geo",
+        "weapon": "Espingarda",
+        "image": "public/images/navia.png",
+        "description": "Navia é a líder da Spina di Rosula, uma figura forte e determinada que luta com elegância e precisão."
+      },{
+    "name": "Nahida",
+    "element": "Dendro",
+    "weapon": "Catalisador",
+    "image": "public/images/nahida.png",
+    "description": "Nahida é a Arconte Dendro de Sumeru, conhecida por sua sabedoria e profunda conexão com o elemento Dendro."
+  },
+  {
+    "name": "Alhaitham",
+    "element": "Dendro",
+    "weapon": "Espada",
+    "image": "public/images/alhaitham.png",
+    "description": "Alhaitham é o Scribe da Akademiya de Sumeru, com uma abordagem lógica e analítica para resolver problemas."
+  },
+  {
+    "name": "Baizhu",
+    "element": "Dendro",
+    "weapon": "Catalisador",
+    "image": "public/images/baizhu.png",
+    "description": "Baizhu é o proprietário da Farmácia Bubu, em Liyue, e um mestre em medicina tradicional."
+  },
+  {
+    "name": "Emilie",
+    "element": "Dendro",
+    "weapon": "Catalisador",
+    "image": "public/images/emilie.png",
+    "description": "Emilie é uma renomada designer de perfumes em Fontaine, conhecida por sua sensibilidade olfativa e habilidades investigativas."
+  },
+  {
+    "name": "Kaveh",
+    "element": "Dendro",
+    "weapon": "Espada",
+    "image": "public/images/kaveh.png",
+    "description": "Kaveh é um arquiteto talentoso de Sumeru, conhecido por seu estilo único e habilidades criativas."
+  },
+    {
+      "name": "Cyno",
+      "element": "Electro",
+      "weapon": "Lança",
+      "image": "public/images/cyno.png",
+      "description": "Cyno é um implacável investigador e guerreiro, especializado no uso de seu poder Electro e lança para derrotar inimigos."
+    },
+    {
+      "name": "Dori",
+      "element": "Electro",
+      "weapon": "Cajado",
+      "image": "public/images/dori.png",
+      "description": "Dori é uma comerciante habilidosa e habilidosa em magia Electro, utilizando seu cajado para auxiliar seus aliados com grandes recursos."
+    },
+    {
+      "name": "Keqing",
+      "element": "Electro",
+      "weapon": "Espada",
+      "image": "public/images/keqing.png",
+      "description": "Keqing é uma guerreira ágil e determinada, que utiliza seu poder Electro com uma espada para combater a corrupção em Liyue."
+    },
+    {
+      "name": "Kuki Shinobu",
+      "element": "Electro",
+      "weapon": "Espada",
+      "image": "public/images/kuki_shinobu.png",
+      "description": "Kuki Shinobu é uma ninja de grande habilidade, manipulando o poder Electro para curar seus aliados e causar estragos entre seus inimigos."
+    },
+    {
+      "name": "Razor",
+      "element": "Electro",
+      "weapon": "Espada",
+      "image": "public/images/razor.png",
+      "description": "Razor é um guerreiro selvagem, criado por lobos, com o poder de Electro e a habilidade de lutar ferozmente com sua espada."
+    },
+    {
+      "name": "Sethos",
+      "element": "Electro",
+      "weapon": "Lança",
+      "image": "public/images/sethos.png",
+      "description": "Sethos é um guerreiro feroz com controle sobre o poder Electro, utilizando sua lança com grande maestria em combate."
+    },
+      {
+        "name": "Kaedahara Kazuha",
+        "element": "Anemo",
+        "weapon": "Espada",
+        "image": "public/images/kaedahara.png",
+        "description": "Kaedahara Kazuha é um espadachim errante, com habilidades no controle do vento (Anemo) e um espírito livre."
+      },
+      {
+        "name": "Sucrose",
+        "element": "Anemo",
+        "weapon": "Cajado",
+        "image": "public/images/sucrose.png",
+        "description": "Sucrose é uma alquimista dedicada, com habilidades no controle do vento e uma grande paixão por experimentos."
+      },
+      {
+        "name": "Sayu",
+        "element": "Anemo",
+        "weapon": "Espadão",
+        "image": "public/images/sayu.png",
+        "description": "Sayu é uma ninja quieta e ágil, especializada em controlar o vento para se mover rapidamente e escapar de situações perigosas."
+      },
+      
+        {
+          "name": "Shenhe",
+          "element": "Cryo",
+          "weapon": "Lança",
+          "image": "public/images/shenhe.png",
+          "description": "Shenhe é uma exorcista de Liyue com habilidades criadas para controlar o Cryo e a lança, sendo uma combatente feroz."
+        },
+        {
+          "name": "Qiqi",
+          "element": "Cryo",
+          "weapon": "Espada",
+          "image": "public/images/qiqi.png",
+          "description": "Qiqi é uma zumbii com habilidades no Cryo, sendo uma curandeira que usa sua espada para lutar contra inimigos."
+        },
+        {
+          "name": "La Signora",
+          "element": "Cryo",
+          "weapon": "Cajado",
+          "image": "public/images/la_signora.png",
+          "description": "La Signora é uma das Harbingers da Fatui, com um imenso poder Cryo e controle sobre as chamas geladas de sua pirotecnia."
+        },
+        {
+          "name": "Layla",
+          "element": "Cryo",
+          "weapon": "Espada",
+          "image": "public/images/layla.png",
+          "description": "Layla é uma estudante dedicada com habilidades Cryo e uma personalidade tímida, sempre tentando proteger os outros com suas habilidades."
+        },
+        {
+          "name": "Kamisato Ayaka",
+          "element": "Cryo",
+          "weapon": "Espada",
+          "image": "public/images/kamisato_ayaka.png",
+          "description": "Kamisato Ayaka é uma nobre da família Kamisato, especializada em controlar o Cryo e lutar com sua espada com grande habilidade."
+        },
+        {
+          "name": "Freminet",
+          "element": "Cryo",
+          "weapon": "Arco",
+          "image": "public/images/freminet.png",
+          "description": "Freminet é um arqueiro habilidoso, com controle sobre o Cryo e grande precisão com seu arco."
+        },
+        {
+          "name": "Eula",
+          "element": "Cryo",
+          "weapon": "Espada",
+          "image": "public/images/eula.png",
+          "description": "Eula é uma comandante dos Cavaleiros de Favonius com um passado nobre, usando sua espada e o poder Cryo para derrotar inimigos com destreza."
+        },
+        {
+          "name": "Diona",
+          "element": "Cryo",
+          "weapon": "Arco",
+          "image": "public/images/diona.png",
+          "description": "Diona é uma bartende e arqueira que utiliza seu poder Cryo para proteger Mondstadt, criando defesas com o gelo enquanto serve bebidas."
+        },
+        
+        {
+          "name": "Candace",
+          "element": "Hydro",
+          "weapon": "Lança",
+          "image": "public/images/candace.png",
+          "description": "Candace é uma guardiã protetora de Aaru Village, utilizando seu escudo e habilidades Hydro para defender e fortalecer seus aliados."
+        },
+        {
+          "name": "Kamisato Ayato",
+          "element": "Hydro",
+          "weapon": "Espada",
+          "image": "public/images/ayato.png",
+          "description": "Kamisato Ayato é o chefe do clã Kamisato, conhecido por sua elegância e ataques rápidos com a espada imbuída de Hydro."
+        },
+        {
+          "name": "Mona",
+          "element": "Hydro",
+          "weapon": "Catalisadora",
+          "image": "public/images/mona.png",
+          "description": "Mona é uma astróloga misteriosa que usa Hydro e ilusões para confundir inimigos e prever o futuro."
+        },
+        {
+          "name": "Nilou",
+          "element": "Hydro",
+          "weapon": "Espada",
+          "image": "public/images/nilou.png",
+          "description": "Nilou é uma dançarina graciosa que canaliza Hydro através de seus movimentos para apoiar sua equipe e causar dano elegante."
+        },
+        {
+          "name": "Sangonomiya Kokomi",
+          "element": "Hydro",
+          "weapon": "Catalisadora",
+          "image": "public/images/kokomi.png",
+          "description": "Líder de Watatsumi Island, Kokomi é uma estrategista e curandeira poderosa com habilidades Hydro excepcionais."
+        },
+        {
+          "name": "Sigewinne",
+          "element": "Hydro",
+          "weapon": "Arco",
+          "image": "public/images/sigewinne.png",
+          "description": "Sigewinne é uma enfermeira carismática da Prisão de Fontaine que combina medicina e Hydro para apoiar aliados de forma incomum."
+        },
+        {
+          "name": "Tartaglia",
+          "element": "Hydro",
+          "weapon": "Arco",
+          "image": "public/images/tartaglia.png",
+          "description": "Também conhecido como Childe, Tartaglia é um guerreiro versátil que alterna entre ataques à distância e corpo-a-corpo com Hydro."
+        },
+        {
+          "name": "Yoimiya",
+          "element": "Pyro",
+          "weapon": "Arco",
+          "image": "public/images/yoimiya.png",
+          "description": "Yoimiya é a mestre dos fogos de artifício de Inazuma, conhecida por seus ataques Pyro rápidos e festivos com o arco."
+        },
+        {
+          "name": "Bennett",
+          "element": "Pyro",
+          "weapon": "Espada",
+          "image": "public/images/bennett.png",
+          "description": "Bennett é um aventureiro entusiasmado com habilidades Pyro que inspiram seus aliados com buffs e cura em campo."
+        },
+        {
+          "name": "Chevreuse",
+          "element": "Pyro",
+          "weapon": "Lança",
+          "image": "public/images/chevreuse.png",
+          "description": "Chevreuse é a capitã da unidade especial de Fontaine, utilizando habilidades Pyro e suporte tático em combate."
+        },
+        {
+          "name": "Dehya",
+          "element": "Pyro",
+          "weapon": "Espadão",
+          "image": "public/images/dehya.png",
+          "description": "Dehya é uma mercenária do Deshret, com estilo de luta feroz e habilidades Pyro que protegem e retaliam com força."
+        },
+        {
+          "name": "Yanfei",
+          "element": "Pyro",
+          "weapon": "Catalisadora",
+          "image": "public/images/yanfei.png",
+          "description": "Yanfei é uma consultora jurídica de Liyue, que usa leis e chamas para lançar ataques Pyro com precisão legal."
+        },
+        {
+          "name": "Lyney",
+          "element": "Pyro",
+          "weapon": "Arco",
+          "image": "public/images/lyney.png",
+          "description": "Lyney é um mágico de Fontaine que mistura truques teatrais com poderosos ataques Pyro para impressionar e destruir."
+        },
+        {
+          "name": "Thoma",
+          "element": "Pyro",
+          "weapon": "Lança",
+          "image": "public/images/thoma.png",
+          "description": "Thoma é o zelador da Comissão Yashiro, com habilidades Pyro defensivas que criam escudos e apoio constante ao time."
+        }
+      ]
+    
+    
+  
+  
